@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="whatsappGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25d366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#128c7e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="120" cy="120" r="120" fill="url(#whatsappGreen)" filter="url(#shadow)"/>
+  
+  <!-- Phone Icon -->
+  <g transform="translate(60, 50)">
+    <!-- Phone Body -->
+    <rect x="20" y="10" width="80" height="120" rx="12" ry="12" fill="white" opacity="0.95"/>
+    
+    <!-- Screen -->
+    <rect x="25" y="20" width="70" height="100" rx="6" ry="6" fill="#e5ddd5"/>
+    
+    <!-- Chat Header -->
+    <rect x="25" y="20" width="70" height="15" rx="6" ry="6" fill="#25d366"/>
+    
+    <!-- Messages -->
+    <!-- Received message -->
+    <rect x="30" y="45" width="35" height="8" rx="4" ry="4" fill="white"/>
+    <rect x="30" y="56" width="25" height="6" rx="3" ry="3" fill="white"/>
+    
+    <!-- Sent message -->
+    <rect x="55" y="70" width="35" height="8" rx="4" ry="4" fill="#dcf8c6"/>
+    <rect x="65" y="81" width="25" height="6" rx="3" ry="3" fill="#dcf8c6"/>
+    
+    <!-- File message indicator -->
+    <rect x="35" y="95" width="30" height="10" rx="2" ry="2" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="42" cy="100" r="2.5" fill="#25d366"/>
+    <rect x="47" y="98" width="15" height="2" fill="#666"/>
+    <rect x="47" y="101" width="10" height="1.5" fill="#999"/>
+    
+    <!-- Message input -->
+    <rect x="28" y="108" width="64" height="8" rx="4" ry="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- Microphone icon in input -->
+    <circle cx="85" cy="112" r="3" fill="#25d366"/>
+    <path d="M84 110 L84 114 M82 112 L86 112" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Message Bubble with File Icon -->
+  <g transform="translate(140, 80)">
+    <ellipse cx="30" cy="25" rx="28" ry="18" fill="white" opacity="0.9"/>
+    <path d="M45 35 Q50 40 45 45" fill="white" opacity="0.9"/>
+    
+    <!-- File icon inside bubble -->
+    <rect x="20" y="18" width="12" height="14" rx="2" fill="#25d366"/>
+    <path d="M26 18 L32 18 L32 24 L30 24 L28 22 L26 22 Z" fill="white"/>
+    <rect x="27" y="25" width="4" height="1" fill="white"/>
+    <rect x="27" y="27" width="3" height="1" fill="white"/>
+    
+    <!-- Audio waveform -->
+    <g transform="translate(35, 20)">
+      <rect x="0" y="8" width="1.5" height="4" fill="#128c7e"/>
+      <rect x="3" y="6" width="1.5" height="8" fill="#128c7e"/>
+      <rect x="6" y="10" width="1.5" height="0" fill="#128c7e"/>
+      <rect x="9" y="7" width="1.5" height="6" fill="#128c7e"/>
+      <rect x="12" y="9" width="1.5" height="2" fill="#128c7e"/>
+    </g>
+  </g>
+  
+  <!-- Modern Chat Elements -->
+  <g transform="translate(45, 160)">
+    <!-- Cloud upload icon -->
+    <circle cx="25" cy="25" r="20" fill="white" opacity="0.8"/>
+    <path d="M18 28 Q15 25 18 22 Q20 20 23 22 Q27 18 32 22 Q35 25 32 28 L30 28 L30 35 L20 35 L20 28 Z" fill="#25d366"/>
+    <path d="M23 32 L25 30 L27 32" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <line x1="25" y1="30" x2="25" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Recording indicator -->
+  <g transform="translate(140, 160)">
+    <circle cx="25" cy="25" r="20" fill="white" opacity="0.8"/>
+    <circle cx="25" cy="25" r="8" fill="#ff4444"/>
+    <circle cx="25" cy="25" r="4" fill="#ffffff"/>
+    <path d="M25 15 Q30 20 25 25 Q20 20 25 15" fill="#25d366"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+flask
+gunicorn
+werkzeug
+flask-sqlalchemy
+flask-dance
+werkzeug
+sqlalchemy
+flask-login
